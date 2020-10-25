@@ -1,0 +1,141 @@
+#header {
+    background-color: grey;
+    display: flex;;
+    width: 100%;
+    height: 300px;
+    justify-content: center;
+}
+
+#header form {
+    color: white;
+    align-self: center;
+    height: 300px;
+    width: 50%;
+    
+}
+H1 {
+    position: absolute;
+    right: 2%;
+}
+
+
+input{
+    width: 100%;
+    margin-top: 4em;
+    background-color: lightblue;
+    
+}
+#src {
+    display: block;
+
+}
+
+#top-text{
+    display: block;
+
+}
+form #bottom-text {
+   display: block;
+
+}
+
+#submit {
+    margin-top: 20px;
+    margin-left: 225px;
+}
+
+#meme-output {
+    display: grid;
+    grid-template-columns:  1fr 1fr  1fr 1fr;
+    grid-template-rows: 0px;
+    grid-template-areas: 
+    " . left right . "
+    " . memeOne memeTwo . "
+    " . remove-button remove-button2 . "
+    " . removeAll removeAll . "; 
+    background-color: black;
+    height: 1100px;
+    color: lightblue;
+    font-size: 200%;
+
+}
+
+.image-specs{
+    width: 500px;
+    height: 500px;
+    opacity: .5;
+
+}
+
+.h1-pos {
+    position: absolute;
+    justify-self: left;
+    top: 0%;
+    font-size: 115%;
+    color: red;
+}
+.h2-pos {
+    position: absolute;
+    justify-self: right;
+    bottom: 0%;
+    font-size: 115%;
+    color: red;
+}
+
+#memeOne {
+    grid-area: memeOne;
+    position: relative;
+    top: 30%;
+    height: 500px;
+    width: 500px;
+    border: floralwhite;
+    border-style: ridge;
+    border-width: 10px;
+}
+
+#memeTwo {
+    grid-area: memeTwo;
+    position: relative;
+    top: 30%;
+    height: 500px;
+    width: 500px;
+    border: floralwhite;
+    border-style: ridge;
+    border-width: 10px;
+}
+
+#left {
+    grid-area: left;
+    margin-top: 20%;
+    justify-self: center;
+    height: 100px;
+}
+
+#right {
+    grid-area: right;
+    margin-top: 20%;
+    justify-self: center;
+    height: 100px;
+}
+
+#remove {
+    grid-area: remove-button;
+    width: 100px;
+    height: 25px;
+    justify-self: center;
+    margin-top: 75px;
+}
+#remove2{
+    grid-area: remove-button2;
+    width: 100px;
+    height: 25px;
+    justify-self: center;
+    margin-top: 75px;
+}
+#removeAll {
+    grid-area: removeAll;
+    width: 300px;
+    height: 25px;
+    justify-self: center;
+
+}
